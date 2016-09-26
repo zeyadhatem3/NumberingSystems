@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.blogspot.zeyadhatem3.numberingsystems.MainActivity"
+    android:background="#d7d1d1"
+    android:weightSum="8"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  convert from : "
+        android:id="@+id/textView"
+        android:textColor="#070707"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:background="#d7d1d1"
+        android:layout_above="@+id/decimal"
+        android:layout_weight="2"
+        />
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Decimal"
+        android:id="@+id/decimal"
+        android:layout_above="@+id/binary"
+        android:layout_alignRight="@+id/binary"
+        android:layout_alignEnd="@+id/binary"
+        android:onClick="goToDecimal"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Binary"
+        android:id="@+id/binary"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToBinary"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Octal"
+        android:id="@+id/octal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToOctal"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Hexadicimal"
+        android:id="@+id/Hex"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToHexadecimal"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

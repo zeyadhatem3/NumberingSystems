@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    android:orientation="vertical"
+    android:background="#d7d1d1">
+
+
+
+    <EditText
+        android:id="@+id/octalText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="enter number"
+        android:inputType="text"
+        android:background="@drawable/edittextstyle"
+        android:layout_weight="2"/>
+
+    <Button
+
+        android:text="to decimal"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button8"
+        android:layout_weight="1" />
+
+    <Button
+        android:text="to binary"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button9"
+        android:layout_weight="1"
+        android:onClick="octalToBinary" />
+
+    <Button
+        android:text="to hexadecimal"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button7"
+        android:layout_weight="1"
+        android:onClick="octalToHex" />
+
+    <TextView
+        android:id="@+id/octalView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="enter number"
+        android:inputType="text"
+        android:background="@drawable/edittextstyle"
+        android:layout_weight="2"/>
+        android:hint="Result :..........." />
+</LinearLayout>
